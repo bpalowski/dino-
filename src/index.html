@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -10,15 +10,44 @@
       <h1>Get the number of Dinos</h1>
 
 
-      <label for="numberDino">How many</label>
-      <input id="numberDino" type="text">
+      <div id="dino-space">
+        <p>Hola</p>
 
+        <form class="form-control">
 
+          <label for="words">How many words per paragraph?</label>
+          <input name="words" id="words" class="words form-control" type="number" />
+          <label for="paragraphs">How many paragraphs?</label>
+          <input name="paragraphs" id="paragraphs" class="paragraphs form-controll" type="number" />
+          <button class="btn btn-primary" id="dino" type="submit">Dino</button>
 
-      <button class="btn-success" id="dino">Get Current !</button>
-      <div class="errors"></div>
-      <div class="showIt"></div>
-      <!-- <div class="showNum"></div> -->
+        </form>
+
+      <div class="errors" id="errors"></div>
+      <div class="showIt" id="results"></div>
     </div>
-  <script type="text/javascript" src="bundle.js"></script></body>
+  <script type="text/javascript" src="bundle.js"></script><script type="text/javascript" src="bundle.js"></script></body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Dinos</title>
+</head>
+<body>
+        <p>Dino</p>
+        <form class="form-control">
+          <label for="words">Input number</label>
+          <input name="words" id="words" class="words form-control" type="number" />
+          <label for="paragraphs">Input number</label>
+          <input name="paragraphs" id="paragraphs" class="paragraphs form-controll" type="number" />
+          <button class="btn btn-sucess" id="dino" type="submit">Show</button>
+        </form>
+        <div class="row">
+      <div class="col-md-6">
+        <p id="showIt"></p>
+      </div>
+  </div>
+<script type="text/javascript" src="bundle.js"></script></body>
 </html>
